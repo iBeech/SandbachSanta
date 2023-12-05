@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    body {
+        background: url(../img/background.png) no-repeat left top #082f3d;
+    }
+</style>
+
+<div class="container">
+    <h1 style="margin-top:100px;">Welcome to Sandbach Santas Sleigh!</h1>
+    <h2>Web-site launching 2024</h2>
+    <br />
+    <p>Until then, you can still donate to our 2023 Santas Sleigh using the options below.</p>
+    <p>Stay tuned next year for exciting web-site developments such as routes, live santa tracking, details on the organisations benefiting from Sandbach Santa sleigh and much more. </p>
+    <div class="container">
+        <div class="row mx-auto text-center">
+            <div class="col-md-6 mb-3" style="margin-top:20px;">
+                <a href="https://www.justgiving.com/crowdfunding/SandbachSanta" target="_blank" class="donation-link">
+                    <img src="~/img/JustGiving Logo -  Purple - PNG.png" alt="Donate to Sandbach Santas Just Giving page" class="donation-image" />
+                    <!-- <p class="donation-text text-md" style="margin-top:25px">Donate using Sandbach Santas Just Giving page</p> -->
+                </a>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="https://settleup.starlingbank.com/thomasbeechphilippajaynebeech" target="_blank" class="donation-link">
+                    <img src="https://assets.stickpng.com/images/6220add8912013c51947f9cb.png" alt="Donate to Sandbach Santas using Apple Pay or Google Pay" class="donation-image" />
+                    <!-- <p class="donation-text text-md">Donate using Apple Pay, Google Pay, or direct from Starling</p> -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,63 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #28A639;
+}
+
+h1, h2 {
+    font-family: 'Mountains of Christmas';
+}
+
+.social-logo {
+    width:25px;
+    margin-right:10px;
+}
+
+/* Add this to your existing stylesheet or create a new one */
+.donation-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px; /* Adjust as needed for spacing between donation blocks */
+}
+
+.donation-image {
+    width: 100%; /* Make the image fill the container */
+    max-width: 150px; /* Limit the maximum width of the image */
+    display: block;
+    margin: 0 auto; /* Center the image within its container */
+}
+
+.donation-text {
+    text-align: center;
+    font-family: Arial;
+    color: #28A639;
+    font-weight: 100;
+    font-size: 16px; /* Adjust the font size */
+    margin-top: 10px; /* Adjust the spacing between image and text */
+}
+
+.custom-container {
+    max-width: 800px; /* Adjust the value based on your preference */
+    margin: 0 auto; /* Center the container */
+}

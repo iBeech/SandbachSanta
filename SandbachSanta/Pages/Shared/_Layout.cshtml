@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SandbachSanta</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SandbachSanta.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/snowflakes.css" />
+    <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container custom-container">
+        <main role="main" class="pb-3">
+            <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+                <div class="snowflake">
+                    <div class="inner"> ❅</div>
+                </div>
+            </div>
+
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="bg-dark text-white p-3 fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <!-- Add your social media logos or links here -->
+                    <a href="https://www.facebook.com/SandbachSantaSleigh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" class="social-logo mr-2"></a>
+                    <a href="https://glympse.com/BcUs--FVS?fbclid=IwAR3wH34t00FzuTIqdPsWlSM4q-gaJjdVi4880KJIolAg2cwIi7SSSfXqzQg" target="_blank">
+                        <img src="https://play-lh.googleusercontent.com/iKNjSbuP2Cclnc7o90bIXLW3z6oKtV_DgDa5__PAvRAHv3p2DrGCUvLvGAVp5U-OCEk" alt="Glympse" class="social-logo  mr-2" style="width:30px;  margin-top:2.5px;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
