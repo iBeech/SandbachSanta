@@ -15,15 +15,158 @@
     <br />
     <p>You can donate to our Santas Sleigh using the options below.</p>
     <p>Stay tuned next year for exciting web-site developments such as routes, live santa tracking, details on the organisations benefiting from Sandbach Santa sleigh and much more. </p>
-    <!--<div class="container">
-        <div class="row mx-auto text-center">
-           <div class="col-md-6 mb-3" style="margin-top:20px;">!-->
-                <a href="https://www.justgiving.com/crowdfunding/SandbachSanta" target="_blank" class="donation-link" style="margin-top:50px;">
-                    <img src="~/img/JustGiving Logo -  Purple - PNG.png" alt="Donate to Sandbach Santas Just Giving page" class="donation-image" />
-                    <!-- <p class="donation-text text-md" style="margin-top:25px">Donate using Sandbach Santas Just Giving page</p> -->
-                </a>
-            <!--</div>
+
+    <a href="https://www.justgiving.com/crowdfunding/sandbach-santa-sleigh" target="_blank" class="donation-link" style="margin-top:50px;">
+        <img src="~/img/JustGiving Logo -  Purple - PNG.png" alt="Donate to Sandbach Santas Just Giving page" class="donation-image" />
+        <!-- <p class="donation-text text-md" style="margin-top:25px">Donate using Sandbach Santas Just Giving page</p> -->
+    </a>
+    
+    <script>
+        // Function to open the modal and load the map route
+        function openModal(mapUrl) {
+            document.getElementById("mapFrame").src = mapUrl;
+            document.getElementById("mapModal").style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("mapModal").style.display = "none";
+            document.getElementById("mapFrame").src = ""; // Clear the map to stop loading
+        }
+
+        // Close the modal when clicking outside the modal content
+        window.onclick = function (event) {
+            var modal = document.getElementById("mapModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+
+    <div class="table-container">
+        <table border="1" style="color=pink">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Group</th>
+                <th>Route</th>
+                <th>Map</th>
+            </tr>
+            <tr>
+                <td>Sunday 1st</td>
+                <td>4PM - 6PM</td>
+                <td>Pride</td>
+                <td>Sandbach Heath North & South</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Sunday 1st</td>
+                <td>6PM - 8PM</td>
+                <td>Day of dance</td>
+                <td></td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Monday 2nd</td>
+                <td>6PM - 8PM</td>
+                <td>Elworth Cricket Club</td>
+                <td>Moss Lane, Elworth Gardens</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Tuesday 3rd</td>
+                <td>6PM - 8PM</td>
+                <td>CAUC Electric Car Club</td>
+                <td>School Lane, Abbey Lane etc</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Wednesday 4th</td>
+                <td>6PM - 8PM</td>
+                <td>Under 8s</td>
+                <td>Albion lock</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Thursday 5th</td>
+                <td>6PM - 8PM</td>
+                <td>Preschool</td>
+                <td>Ettiley Heath</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Friday 6th</td>
+                <td>6PM - 8PM</td>
+                <td>Friends for Leisure</td>
+                <td>Trentlea, Forgefields</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Saturday 7th</td>
+                <td>4PM - 6PM</td>
+                <td>Clean team</td>
+                <td></td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Saturday 7th</td>
+                <td>6PM - 8PM</td>
+                <td>Hockey</td>
+                <td>Co-op, Elworth hall</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Sunday 8th</td>
+                <td>6PM - 8PM</td>
+                <td>Scouts</td>
+                <td>Abbeyfields</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Monday 9th</td>
+                <td>6PM - 8PM</td>
+                <td>Guides</td>
+                <td>Abbeyfields</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Tuesday 10th</td>
+                <td>6PM - 8PM</td>
+                <td>Borneo project</td>
+                <td>Queens drive etc</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Wednesday 11th</td>
+                <td>6PM - 8PM</td>
+                <td>The pantry</td>
+                <td>Crewe Road, Townfields</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Saturday 14th</td>
+                <td>4PM - 6PM</td>
+                <td>Rugby</td>
+                <td>Tatton drive, J17</td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+            <tr>
+                <td>Saturday 14th</td>
+                <td>6PM - 8PM</td>
+                <td>Netball</td>
+                <td></td>
+                <td><button onclick="openModal('https://www.google.com/maps/embed?pb=!1m42!1m12!1m3!1d2392.421234240368!2d-2.3205364645041118!3d53.1564808720137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m27!3e0!4m5!1s0x487a5a367e9d9fc7%3A0x765fd1be7f26f1c5!2s1%20Pulford%20Rd%2C%20Arclid%2C%20Sandbach!3m2!1d53.1581577!2d-2.3190733!4m3!3m2!1d53.1586615!2d-2.3193186999999997!4m3!3m2!1d53.1589445!2d-2.3185248!4m3!3m2!1d53.157355499999994!2d-2.3191471!4m3!3m2!1d53.1541317!2d-2.3169713!4m3!3m2!1d53.1549384!2d-2.318002!5e0!3m2!1sen!2suk!4v1730193459357!5m2!1sen!2suk')" class="view-route-btn">View</button></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="mapFrame" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </div>!-->
+    </div>
 
 </div>

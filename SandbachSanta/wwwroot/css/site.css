@@ -1,4 +1,4 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
@@ -30,6 +30,92 @@ h1 {
 
 h1, h2 {
     font-family: 'Mountains of Christmas';
+}
+
+/* Table container */
+.table-container {
+    max-width: 800px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+/* Christmas-styled table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Header styling with Christmas colors */
+th {
+    background-color: #2a7d2a; /* Festive green */
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+}
+
+    /* Adding a little Santa hat icon to headers */
+    th::after {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+
+/* Cell styling with padding and Christmas colors */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors - festive red */
+tr:nth-child(even) {
+    background-color: #ffe4e1; /* Light pinkish red */
+}
+
+/* Hover effect with a Christmas theme */
+tr:hover {
+    background-color: #f9f2ec; /* Subtle festive highlight */
+}
+
+/* Footer row for extra sparkle */
+tfoot td {
+    background-color: #c32f27;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Snowflake icon before each row */
+td:first-child::before {
+    content: "❄️ ";
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.view-route-btn {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .social-logo {
@@ -65,3 +151,45 @@ h1, h2 {
     max-width: 800px; /* Adjust the value based on your preference */
     margin: 0 auto; /* Center the container */
 }
+
+
+/* Pop up */
+/* Modal container - hidden by default */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
