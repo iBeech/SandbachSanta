@@ -7,6 +7,8 @@
 <style>
     body {
         background: url(../img/background.png) no-repeat left top #082f3d;
+        background-attachment: fixed;
+        background-size: cover; /* Optional: Ensures the image covers the whole screen */
     }
 </style>
 
@@ -42,8 +44,7 @@
             }
         }
     </script>
-
-
+    
     <div class="table-container">
         <table border="1" style="color=pink">
             <tr>
@@ -165,7 +166,7 @@
     <div id="mapModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <iframe id="mapFrame" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="mapFrame" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 
